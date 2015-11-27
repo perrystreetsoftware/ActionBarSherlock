@@ -1,0 +1,21 @@
+allprojects  {
+  apply plugin: 'maven'
+
+  group = 'com.actionbarsherlock'
+version = '4.3.0'
+}
+
+subprojects {
+  
+  repositories {
+    mavenLocal()
+    
+    maven { url "https://oss.sonatype.org/content/repositories/snapshots" }
+    maven { url "http://repo.maven.apache.org/maven2" }
+  }
+
+  configurations.all {
+}
+  
+  
+}

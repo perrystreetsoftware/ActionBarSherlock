@@ -1,0 +1,25 @@
+rootProject.name = 'parent'
+include ':actionbarsherlock'
+/*
+#include ':actionbarsherlock-fest'
+#include ':actionbarsherlock-i18n'
+#include ':parent-sample:sample-demos'
+#include ':parent-sample:sample-fragments'
+#include ':parent-sample:sample-known-bugs'
+#include ':parent-sample:sample-roboguice'
+#include ':parent-sample:sample-styled'
+#include ':parent-sample'
+*/
+
+project(':actionbarsherlock').projectDir = "$rootDir/actionbarsherlock" as File
+
+/*
+#project(':actionbarsherlock-fest').projectDir = "$rootDir/actionbarsherlock-fest" as File
+#project(':actionbarsherlock-i18n').projectDir = "$rootDir/actionbarsherlock-i18n" as File
+#project(':parent-sample:sample-demos').projectDir = "$rootDir/actionbarsherlock-samples/demos" as File
+#project(':parent-sample:sample-fragments').projectDir = "$rootDir/actionbarsherlock-samples/fragments" as File
+#project(':parent-sample:sample-known-bugs').projectDir = "$rootDir/actionbarsherlock-samples/known-bugs" as File
+#project(':parent-sample:sample-roboguice').projectDir = "$rootDir/actionbarsherlock-samples/roboguice" as File
+#project(':parent-sample:sample-styled').projectDir = "$rootDir/actionbarsherlock-samples/styled" as File
+#project(':parent-sample').projectDir = "$rootDir/actionbarsherlock-samples" as File
+*/
